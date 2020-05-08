@@ -6,6 +6,7 @@
 package layout;
 
 import javax.swing.JPanel;
+import views.listaProduto;
 
 /**
  *
@@ -13,6 +14,6 @@ import javax.swing.JPanel;
  */
 public class Centro extends JPanel {
     public Centro(){     
-        //add(new formularioProduto());
+        add(new listaProduto());
     }
 }

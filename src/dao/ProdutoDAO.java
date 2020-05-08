@@ -25,7 +25,39 @@ public static void adicionar(ProdutoBean produto){
 
         }    
     }
+
+    public static ArrayList<ProdutoBean> listar(){
+        
+        ArrayList<ProdutoBean> produtos = new ArrayList<>();
+                
+        String sql = "SELECT * FROM produto";
+        
+        try{
+            Connection conexao = ConexaoDB.retornaConexao();
+            PreparedStatement stmt = conexao.prepareStatement(sql);
+            
+            ResultSet dados = stmt.executeQuery();
+            
+            while(dados.next()){
+                ProdutoBean temporario = new ProdutoBean();
+                temporario.setId(dados.getInt("id"));
+                temporario.setDescricao(dados.getString("descricao"));
+                temporario.setPreco(dados.getDouble("preco"));
+                temporario.setQuantidade(dados.getInt("quantidade"));
+                
+                produtos.add(temporario);
+            }
+            
+        }catch(Exception e){} 
+        
+        return produtos;
+    }   
     
+
+    public static void excluir() { }
+    
+    
+    public static void atualizar() { }
 
 }
     

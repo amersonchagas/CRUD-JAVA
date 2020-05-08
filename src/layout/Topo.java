@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import static principal.IniciarAplicacao.centro;
 import views.formularioProduto;
+import views.listaProduto;
 
 /**
  *
@@ -31,7 +32,10 @@ public class Topo extends JPanel {
         botao1.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    System.out.println("Botao 1 pressionado");
+                    centro.removeAll();
+                    centro.add(new listaProduto());   
+                    centro.repaint();                 
+                    centro.validate();
                 }
             });
         
@@ -40,7 +44,7 @@ public class Topo extends JPanel {
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     centro.removeAll();
-                    centro.add(new formularioProduto());   
+                    centro.add(new listaProduto());   
                     centro.repaint();                 
                     centro.validate();
                 }
@@ -50,7 +54,10 @@ public class Topo extends JPanel {
         botao3.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                     System.out.println("Botao 3 pressionado");
+                    centro.removeAll();
+                    centro.add(new listaProduto());   
+                    centro.repaint();                 
+                    centro.validate();
                 }
             });
         
@@ -58,7 +65,10 @@ public class Topo extends JPanel {
         botao4.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    System.out.println("Botao 4 pressionado");
+                    centro.removeAll();
+                    centro.add(new listaProduto());   
+                    centro.repaint();                 
+                    centro.validate();
                 }
             });
         
@@ -66,7 +76,10 @@ public class Topo extends JPanel {
         botao5.addActionListener(
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    System.out.println("Botao 5 pressionado");
+                    centro.removeAll();
+                    centro.add(new listaProduto());   
+                    centro.repaint();                 
+                    centro.validate();
                 }
             });
         
