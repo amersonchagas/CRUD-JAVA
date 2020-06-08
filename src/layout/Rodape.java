@@ -5,6 +5,7 @@
  */
 package layout;
 
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
@@ -12,5 +13,9 @@ import javax.swing.JPanel;
  * @author hitch
  */
 public class Rodape extends JPanel{
-    
+    public Rodape(){
+        JLabel copy = new JLabel("Desenvolvido por Amerson Chagas");
+        
+        add(copy);
+    }
 }

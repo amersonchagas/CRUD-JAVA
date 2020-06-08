@@ -30,6 +30,7 @@ public class Topo extends JPanel {
         setLayout(layoutTopo);
         botao1 = new JButton("Produtos");
         botao1.addActionListener(
+        
             new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     centro.removeAll();
@@ -37,7 +38,8 @@ public class Topo extends JPanel {
                     centro.repaint();                 
                     centro.validate();
                 }
-            });
+            }
+        );
         
         botao2 = new JButton("Clientes");
         botao2.addActionListener(
@@ -89,7 +91,5 @@ public class Topo extends JPanel {
         add(botao4);
         add(botao5);
     }
-    
-     
     
 }

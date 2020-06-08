@@ -17,8 +17,7 @@ import views.formularioProduto;
 public class IniciarAplicacao {
     public static Centro centro = new Centro();
     
-    public static void main(String[] args){
-        
+    public static void main(String[] args){       
         
         BorderLayout layout_janela = new BorderLayout();
         
@@ -28,9 +27,10 @@ public class IniciarAplicacao {
         janela.add(new Topo(), BorderLayout.NORTH);
         janela.add(new Rodape(), BorderLayout.SOUTH);
         janela.add(new Esquerda(), BorderLayout.EAST);
-        janela.add(new Direita(), BorderLayout.WEST);
+        janela.add(new Direita(), BorderLayout.WEST);   
         janela.pack();
         janela.setVisible(true);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
     }    
 }

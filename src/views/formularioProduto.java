@@ -45,6 +45,10 @@ public class formularioProduto extends JPanel implements ActionListener {
     
     }
 
+    formularioProduto(int idProduto) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
        String descricao_digitado = campo_descricao.getText();

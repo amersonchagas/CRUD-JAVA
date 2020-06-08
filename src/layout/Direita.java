@@ -5,6 +5,7 @@
  */
 package layout;
 
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 /**
@@ -12,5 +13,7 @@ import javax.swing.JPanel;
  * @author hitch
  */
 public class Direita extends JPanel{
-    
+    public Direita(){
+        
+    }
 }
